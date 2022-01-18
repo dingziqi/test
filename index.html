@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html style="font-size: 50px;">
+	<head>
+		<title>任务中心</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<style>
+			.noresult-container {
+				margin-top: 2.52rem;
+			}
+			.wrap {
+				display: flex;
+				justify-content: center;
+				margin-bottom: 0.32rem;
+			}
+			.wrap .no-result {
+				width: 3.6rem;
+				height: 2rem;				 
+			}
+			.version {				 
+				font-size: 0.4rem;
+				font-family: PingFangSC-Regular, PingFang SC;
+				font-weight: 400;
+				color: #333333;
+				line-height: 0.56rem;
+				text-align: center;
+				margin-bottom: 0.48rem;
+			}			
+			.wrap .btn {
+				display: inline-block;
+				width: 6.22rem;
+				height: 0.96rem;
+				background-image: url(./btn_bg_c.png);
+				background-repeat: no-repeat;
+				background-size: contain;
+				text-align: center;
+				line-height: 0.96rem;			 
+				font-size: 0.32rem;
+				font-family: PingFangSC-Semibold, PingFang SC;
+				font-weight: 600;
+				color: #FFFFFF;
+			}
+			.wrap .desc {
+				width: 6.22rem;			
+				font-size: 0.24rem;
+				font-family: PingFangSC-Regular, PingFang SC;
+				font-weight: 400;
+				color: #666666;
+				line-height: 0.34rem;
+			}
+			.wrap .desc .wig {				
+				font-family: PingFangSC-Medium, PingFang SC;
+				font-weight: 400;
+				color: #666666;				
+			}
+		</style>
+		<script>
+			function handleClick() { 
+        console.log(window.open);
+        location.href = 'https://at.umtrack.com/onelink/51DGTr'
+				// window.open('https://at.umtrack.com/onelink/51DGTr');
+ 			}			 
+		</script>
+    <script src="https://unpkg.com/vconsole@latest/dist/vconsole.min.js"></script>
+    <script>
+      // VConsole will be exported to `window.VConsole` by default.
+      var vConsole = new window.VConsole();
+    </script>
+	</head>
+	<body>		
+		<div class="noresult-container">
+			<div class="wrap">
+				<img class="no-result" src="./noresult.png" >
+			</div>			
+			<div class="version">当前版本过低</div>
+			<div class="wrap">
+				<div class="btn" onclick="handleClick()">好的，立即更新</div>
+			</div>
+			<div class="wrap">
+				<div class="desc">点击此按钮升级，领取全新签到福利！您也可以在各大应用市场下载最新无忧行，前往<span class="wig">“我的”、“任务中心”</span>签到</div>
+			</div>
+		</div>		
+	</body>
